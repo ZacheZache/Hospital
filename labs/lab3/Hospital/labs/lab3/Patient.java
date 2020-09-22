@@ -11,8 +11,8 @@ public class Patient {
     private String name;
     private String sickness;
     public  Patient(String name, String sickness) { //Patienter förutom Helena från array
-        this.name = name; //probs fel
-        this.sickness = sickness; //probs fel
+        this.name = name;
+        this.sickness = sickness;
     }
 
     public  Patient(String Name) { //Helena från array
@@ -21,8 +21,13 @@ public class Patient {
 
 
     public String getName(){
-
+        return  name;
     }
+
+    public String getSickness(){
+        return sickness;
+    }
+
 
 
     public String isSick(){
@@ -33,11 +38,5 @@ public class Patient {
     public String takeMedication(){
 
     }
-
-
-    public String getSickness(){
-
-    }
-
 
 }

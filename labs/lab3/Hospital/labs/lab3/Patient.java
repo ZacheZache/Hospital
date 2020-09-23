@@ -10,13 +10,14 @@ public class Patient {
 
     private String name;
     private String sickness;
+
     public  Patient(String name, String sickness) { //Patienter förutom Helena från array
         this.name = name;
         this.sickness = sickness;
     }
 
     public  Patient(String Name) { //Helena från array
- // HELENA???
+        // HELENA???
     }
 
 
@@ -30,7 +31,8 @@ public class Patient {
 
 
 
-    public String isSick(){
+    public boolean isSick(){
+        return !this.sickness.isEmpty();
 
     }
 

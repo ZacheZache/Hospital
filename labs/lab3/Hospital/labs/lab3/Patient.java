@@ -40,12 +40,10 @@ public class Patient {
         return sickness != null;
     }
 
-    String takeMedication(Medicine medicine) {
+    void takeMedication(Medicine medicine) {
         //Vi sätter sickness till null för att medicinen matchar sjukdomen
         if (medicine.getTreatmentName().equals(sickness))
             sickness = null;
-
-        return sickness;
     }
 
 }
